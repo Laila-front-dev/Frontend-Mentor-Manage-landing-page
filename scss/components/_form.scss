@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+form {
+  input[type="email"] {
+    background-color: $color-neutral-100;
+    border-radius: 22px;
+    padding-block: 11px;
+    padding-inline: 24px;
+    font-size: $font-size-100;
+    color: $color-neutral-500;
+  }
+}
+
+.form__field {
+  display: grid;
+  justify-items: center;
+  &.error input {
+    border: 1px solid red;
+  }
+  &.error input::placeholder {
+    color: red;
+  }
+  small {
+    color: red;
+    font-style: italic;
+  }
+}
+
+.shade {
+  position: absolute;
+  display: none;
+  @include mq(medium) {
+    display: block;
+    top: 65rem;
+    left: -35rem;
+  }
+}

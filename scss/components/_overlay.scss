@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.overlay {
+  position: sticky;
+  max-width: 100%;
+  min-height: 100vh;
+  inset: 0;
+  display: none;
+  background: linear-gradient(
+    180deg,
+    hsl(0, 0%, 0%, 0.01%) 0%,
+    hsl(0, 0%, 0%, 59.9%) 100%
+  );
+  z-index: 10;
+  &.show {
+    display: block;
+    @include mq(medium) {
+      display: none;
+    }
+  }
+}

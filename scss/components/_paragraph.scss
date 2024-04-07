@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+p {
+  max-width: 33ch;
+  margin-inline: auto;
+  font-size: $font-size-400;
+  line-height: 28px;
+  font-weight: normal;
+  color: $color-neutral-500;
+  @include mq(medium) {
+    max-width: 36ch;
+    margin-inline: 0;
+  }
+}
+
+p[data-type="wide"] {
+  // max-width: 42ch;
+  // font-size: $font-size-200;
+  // @include mq(large) {
+  //   margin-inline: 0;
+  //   max-width: 44ch;
+  // }
+  max-width: 100%;
+}

@@ -1,0 +1,21 @@
+/* FONT FACE */
+@font-face {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  src: url("/asset/font/BeVietnamProBold.woff2") format("woff2"),
+    url("/asset/font/BeVietnamProBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  src: url("/asset/font/BeVietnamProMedium.woff2") format("woff2"),
+    url("/asset/font/BeVietnamProMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  src: url("/asset/font/BeVietnamProRegular.woff2") format("woff2"),
+    url("/asset/font/BeVietnamProRegular.woff") format("woff");
+}

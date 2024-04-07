@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+footer {
+  nav {
+    padding-block-start: 3.188rem;
+    // padding-block-end: 3rem;
+    @include mq(medium) {
+      padding-block-start: 0rem;
+      padding-block-end: 0rem;
+    }
+    ul {
+      @include mq(medium) {
+        justify-content: space-between !important;
+      }
+      li {
+        margin-block-end: 1rem;
+        color: $color-accent-100;
+        font-size: $font-size-300;
+        font-weight: $fw-regular;
+        letter-spacing: -0.23px;
+        &:hover {
+          color: $color-accent-500;
+        }
+      }
+    }
+  }
+}

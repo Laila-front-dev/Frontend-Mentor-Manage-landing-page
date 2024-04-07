@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.about__section {
+  position: relative;
+  padding-block-start: 2.813rem;
+  padding-block-end: 1.938rem;
+  @include mq(medium) {
+    padding-block-start: 4.125rem;
+    padding-block-end: 5.125rem;
+  }
+}

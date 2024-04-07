@@ -1,0 +1,69 @@
+@use "../abstracts/" as *;
+.about__card {
+  position: relative;
+  &::before {
+    position: absolute;
+    background-color: $color-accent-500;
+    color: #ffffff;
+    width: 67px;
+    height: 39px;
+    // left: -96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: $fw-bold;
+    border-radius: 39px;
+  }
+  h3 {
+    padding-inline-start: 5rem;
+    padding-block: 0.7rem;
+    background-color: $color-accent-100;
+    border-start-start-radius: 39px;
+    border-end-start-radius: 39px;
+    // height: 39px;
+    @include mq(medium) {
+      background-color: transparent;
+      padding-block-start: 0.7rem;
+      padding-block-end: 0rem;
+    }
+  }
+  p {
+    padding-inline-start: 0rem;
+    @include mq(medium) {
+      padding-inline-start: 5rem;
+    }
+  }
+}
+
+.about__card:first-child:before {
+  content: "01";
+}
+.about__card:nth-child(2):before {
+  content: "02";
+}
+.about__card:last-child:before {
+  content: "03";
+}
+
+.about__card:not(:last-child) {
+  padding-block-end: 2.5rem;
+}
+
+// TESTIMONIAL CARD
+
+.testimonial__card {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  background-color: $color-neutral-100;
+
+  img {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 72px;
+  }
+}

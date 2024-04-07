@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  font-size: $font-size-100;
+  font-weight: $fw-bold;
+  background-color: $color-accent-500;
+  color: $color-neutral-100;
+  border-radius: 22px;
+  padding-block: 12px;
+  padding-inline: 32px;
+  cursor: pointer;
+  &:hover {
+    background-color: hsl(12, 92%, 72%);
+  }
+  &[data-type="secondary"] {
+    background-color: $color-neutral-100;
+    color: $color-accent-500;
+    &:hover {
+      color: hsl(12, 92%, 72%);
+    }
+  }
+}

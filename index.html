@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Manage landing page</title>
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- CSS FILE STYLE -->
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="f-flex">
+          <img src="./asset/images/logo.svg" alt="manage logo" />
+          <nav>
+            <button
+              class="menu__toggle"
+              aria-controls="primary__navigation"
+              aria-expanded="false"
+            >
+              <span class="visually__hidden">Menu</span>
+              <div class="hamburger" aria-hidden="true"></div>
+            </button>
+            <ul
+              role="list"
+              data-state="closed"
+              class="primary__navigation | flex"
+              id="primary__navigation"
+            >
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button" data-type="navigation">Get Started</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="container">
+          <div class="d-grid grid-columns align__items__center">
+            <div class="grid__column">
+              <img
+                src="./asset/images/illustration-intro.svg"
+                alt="hero image"
+              />
+            </div>
+            <div class="text__align | flow grid__row__1">
+              <h1 class="heading-1">
+                Bring everyone together to build better products.
+              </h1>
+              <p>
+                Manage makes it simple for software teams to plan day-to-day
+                tasks while keeping the larger team goals in view.
+              </p>
+              <button class="button">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about__section">
+        <div class="container">
+          <div class="d-grid grid__auto__flow">
+            <div class="text__align | flow">
+              <h2 class="heading-2" style="white-space: normal">
+                What’s different about Manage?
+              </h2>
+              <p>
+                Manage provides all the functionality your team needs, without
+                the complexity. Our software is tailor-made for modern digital
+                product teams.
+              </p>
+            </div>
+            <div>
+              <div class="flow | about__card">
+                <h3 class="heading-3">Track company-wide progress</h3>
+                <p data-type="wide">
+                  See how your day-to-day tasks fit into the wider vision. Go
+                  from tracking progress at the milestone level all the way done
+                  to the smallest of details. Never lose sight of the bigger
+                  picture again.
+                </p>
+              </div>
+              <div class="flow | about__card">
+                <h3 class="heading-3">Advanced built-in reports</h3>
+                <p data-type="wide">
+                  Set internal delivery estimates and track progress toward
+                  company goals. Our customisable dashboard helps you build out
+                  the reports you need to keep key stakeholders informed.
+                </p>
+              </div>
+              <div class="flow | about__card">
+                <h3 class="heading-3">Everything you need in one place</h3>
+                <p data-type="wide">
+                  Stop jumping from one service to another to communicate, store
+                  files, track tasks and share documents. Manage offers an
+                  all-in-one team productivity solution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="shade">
+        <img src="./asset/images/bg-tablet-pattern.svg" alt="" />
+      </div>
+      <section class="testimonial__section">
+        <h2 class="heading-2 text__center">What they’ve said</h2>
+        <div class="swiper mySwiper | testimonial__cards">
+          <div class="swiper-wrapper | d-grid grid__foor__columns">
+            <div class="swiper-slide | testimonial__card">
+              <img src="./asset/images/avatar-anisha.png" alt="anisha" />
+              <h3 class="heading-3">Anisha Li</h3>
+              <p class="mx-auto" style="max-width: 53ch">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+            <div class="swiper-slide | testimonial__card">
+              <img src="./asset/images/avatar-ali.png" alt="ali" />
+              <h3 class="heading-3">Ali Bravo</h3>
+              <p class="mx-auto" style="max-width: 53ch">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+            <div class="swiper-slide | testimonial__card">
+              <img src="./asset/images/avatar-richard.png" alt="richard" />
+              <h3 class="heading-3">Richard Watts</h3>
+              <p class="mx-auto" style="max-width: 53ch">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+            <div class="swiper-slide | testimonial__card">
+              <img src="./asset/images/avatar-shanai.png" alt="shanai" />
+              <h3 class="heading-3">Shanai Gough</h3>
+              <p class="mx-auto" style="max-width: 53ch">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <button class="button">Get Started</button>
+      </section>
+      <section class="community__section | bg-accent-500 clr-neutral-100">
+        <div class="container">
+          <div class="d-grid grid__auto__flow justify__content__spacebetweeen">
+            <div>
+              <h2 class="heading-2" style="white-space: normal">
+                Simplify how your team works today.
+              </h2>
+            </div>
+            <button class="button mx-auto" data-type="secondary">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="d-grid grid__auto__flow">
+          <form action="\" class="grid__column__4 | d-flex" id="singup">
+            <div class="form__field">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Updates in your inbox…"
+                autocomplete="off"
+              />
+              <small></small>
+            </div>
+            <input type="submit" value="Go" class="button" />
+          </form>
+          <nav class="grid__column__2">
+            <ul role="list" class="d-flex">
+              <div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+              </div>
+              <div>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </div>
+            </ul>
+          </nav>
+          <div class="d-grid">
+            <ul role="list" class="d-flex grid__row | socials">
+              <li>
+                <a href="#"
+                  ><img src="./asset/images/icon-facebook.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./asset/images/icon-youtube.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./asset/images/icon-twitter.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./asset/images/icon-pinterest.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./asset/images/icon-instagram.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+            <img src="./asset/images/logo-light.png" alt="logo" />
+          </div>
+          <p class="grid__column__4">Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

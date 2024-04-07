@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+.community__section {
+  position: relative;
+  padding-block: 5.688rem;
+  z-index: 1;
+  @include mq(medium) {
+    margin-block-start: 5.625rem;
+    padding-block: 3.875rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/asset/images/bg-simplify-section-desktop.svg");
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position-x: -100vw;
+    background-position-y: 0vw;
+    z-index: -1;
+    @include mq(medium) {
+      background-position-x: 15vw;
+      background-position-y: -7vw;
+    }
+  }
+  h2 {
+    padding-block-end: 1.813rem;
+    font-size: 2.5rem;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: center;
+    height: fit-content;
+    @include mq(medium) {
+      text-align: start;
+      max-width: 445px;
+      padding-block-end: 0rem;
+    }
+  }
+}

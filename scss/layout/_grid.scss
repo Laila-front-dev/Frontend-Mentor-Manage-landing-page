@@ -1,0 +1,94 @@
+@use "../abstracts/" as *;
+
+.d-grid {
+  display: grid;
+}
+
+.grid__auto__flow {
+  grid-auto-flow: row;
+  @include mq(medium) {
+    grid-auto-flow: column;
+  }
+}
+
+.align__items__center {
+  align-items: center;
+}
+
+.grid__auto__fit {
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+}
+
+.grid-columns {
+  @include mq(medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid__event__columns {
+  @include mq(large) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid__foor__columns {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid__column {
+  @include mq(medium) {
+    grid-column: 2;
+  }
+}
+
+.grid__column__2 {
+  @include mq(medium) {
+    grid-column: 2 / 4;
+  }
+}
+
+.grid__column__4 {
+  @include mq(medium) {
+    grid-column: 4;
+  }
+}
+
+.grid__row__1 {
+  @include mq(medium) {
+    grid-row: 1;
+  }
+}
+
+.grid__row {
+  @include mq(medium) {
+    grid-row: 2;
+  }
+}
+
+.justify__content__center {
+  justify-content: center;
+}
+
+.justify__content__spacebetweeen {
+  justify-content: space-between;
+}
+
+.justify__item__center {
+  justify-items: center;
+  @include mq(medium) {
+    justify-items: left;
+  }
+}
+
+.align-items {
+  align-items: center;
+}
+
+.gap {
+  gap: $size-6;
+}
+
+.gaps {
+  gap: $size-12;
+}

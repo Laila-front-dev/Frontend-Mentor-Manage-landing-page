@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.heading-1 {
+  font-size: $font-size-700;
+  font-weight: $fw-bold;
+  letter-spacing: -1px;
+  line-height: 50px;
+  @include mq(medium) {
+    line-height: 64px;
+  }
+}
+
+.heading-2 {
+  font-size: $font-size-500;
+  font-weight: $fw-bold;
+  letter-spacing: -0.62px;
+  line-height: 45px;
+}
+
+.heading-3 {
+  font-size: $font-size-400;
+  font-weight: $fw-bold;
+  letter-spacing: -0.29px;
+  line-height: auto;
+}

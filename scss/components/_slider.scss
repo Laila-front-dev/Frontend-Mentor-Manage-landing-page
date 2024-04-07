@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.swiper-pagination {
+  @include mq(large) {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    background: transparent;
+    border: 1px solid $color-accent-500;
+  }
+  .swiper-pagination-bullet-active {
+    background: $color-accent-500;
+  }
+}

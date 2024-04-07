@@ -1,0 +1,77 @@
+@use "../abstracts/" as *;
+
+.primary__navigation {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  bottom: 0;
+  right: 0;
+  // transform: translate(-50%, 12%);
+  background-color: #ffffff;
+  width: 325px;
+  height: 291px;
+  border-radius: 4px;
+  transition: transform 0.5s;
+
+  li {
+    color: $color-primary-900;
+    font-size: $font-size-150;
+    letter-spacing: -0.29px;
+    font-weight: bold;
+    @include mq(medium) {
+      font-weight: $fw-medium;
+    }
+    &:hover {
+      color: $color-neutral-500;
+    }
+  }
+  @include mq(medium) {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+  }
+  &[data-state="closed"] {
+    transform: translate(-50%, -300%);
+    @include mq(medium) {
+      transform: translate(-50%, 12%);
+    }
+  }
+
+  &[data-state="opened"] {
+    transform: translate(-50%, 12%);
+  }
+}
+.button[data-type="navigation"] {
+  display: none;
+  @include mq(medium) {
+    display: block;
+  }
+}
+
+.menu__toggle {
+  width: 25px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mq(medium) {
+    display: none;
+  }
+  &[aria-expanded="false"] {
+    background-image: url("/asset/images/icon-hamburger.svg");
+  }
+
+  &[aria-expanded="true"] {
+    background-image: url("/asset/images/icon-close.svg");
+  }
+}
+
+.visually__hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
