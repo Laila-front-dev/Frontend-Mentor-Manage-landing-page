@@ -5,7 +5,7 @@ footer {
   padding-block-end: 1.875rem;
   background-color: $color-primary-800;
   @include mq(medium) {
-    padding-block: 3.813rem;
+    padding-block-start: 3.813rem;
   }
   form {
     @include mq(medium) {

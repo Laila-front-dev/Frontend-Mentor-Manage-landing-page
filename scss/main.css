@@ -1478,7 +1478,7 @@ footer {
 }
 @media screen and (min-width: 48em) {
   footer {
-    padding-block: 3.813rem;
+    padding-block-start: 3.813rem;
   }
 }
 @media screen and (min-width: 48em) {
