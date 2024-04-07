@@ -5,21 +5,22 @@
   padding-block-end: 2.813rem;
   z-index: 1;
   @include mq(medium) {
+    padding-block-start: 5.438rem;
     padding-block-end: 4.125rem;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../asset/images/bg-tablet-pattern.svg");
-    inset: 0;
-    background-repeat: no-repeat;
-    background-position-x: 20vw;
-    background-position-y: -10vw;
-    background-size: contain;
-    @include mq(medium) {
-      background-position-x: 57vw;
-      background-position-y: -5vw;
-    }
-    z-index: -1;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-image: url("../asset/images/bg-tablet-pattern.svg");
+  //   inset: 0;
+  //   background-repeat: no-repeat;
+  //   background-position-x: 20vw;
+  //   background-position-y: -10vw;
+  //   background-size: contain;
+  //   @include mq(medium) {
+  //     background-position-x: 57vw;
+  //     background-position-y: -5vw;
+  //   }
+  //   z-index: -1;
+  // }
 }

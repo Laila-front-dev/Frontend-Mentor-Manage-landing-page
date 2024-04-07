@@ -26,12 +26,12 @@ form {
   }
 }
 
-.shade {
-  position: absolute;
-  display: none;
-  @include mq(medium) {
-    display: block;
-    top: 65rem;
-    left: -35rem;
-  }
-}
+// .shade {
+//   position: absolute;
+//   display: none;
+//   @include mq(medium) {
+//     display: block;
+//     top: 65rem;
+//     left: -35rem;
+//   }
+// }

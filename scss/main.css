@@ -1594,24 +1594,8 @@ p[data-type=wide] {
 }
 @media screen and (min-width: 48em) {
   .hero__section {
+    padding-block-start: 5.438rem;
     padding-block-end: 4.125rem;
-  }
-}
-.hero__section::before {
-  content: "";
-  position: absolute;
-  background-image: url("../asset/images/bg-tablet-pattern.svg");
-  inset: 0;
-  background-repeat: no-repeat;
-  background-position-x: 20vw;
-  background-position-y: -10vw;
-  background-size: contain;
-  z-index: -1;
-}
-@media screen and (min-width: 48em) {
-  .hero__section::before {
-    background-position-x: 57vw;
-    background-position-y: -5vw;
   }
 }
 
@@ -1653,18 +1637,6 @@ form input[type=email] {
 .form__field small {
   color: red;
   font-style: italic;
-}
-
-.shade {
-  position: absolute;
-  display: none;
-}
-@media screen and (min-width: 48em) {
-  .shade {
-    display: block;
-    top: 65rem;
-    left: -35rem;
-  }
 }
 
 footer nav {
